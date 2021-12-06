@@ -20,7 +20,7 @@ public abstract class Day {
     }
 
     /**
-     * The solution for an advent of code day
+     * The solutions for an advent of code day
      */
     abstract void solution() throws IOException;
 

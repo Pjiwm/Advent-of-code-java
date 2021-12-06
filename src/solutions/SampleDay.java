@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.Stack;
 
+import Utils.ArrayUtils;
+
 public class SampleDay extends Day {
 
     public SampleDay() {
@@ -20,13 +22,13 @@ public class SampleDay extends Day {
     @Override
     public void solution() throws IOException {
         // We retrieve the input from the file and put it in a datatype of our choice
-        ArrayList<String> input = new ArrayList<>();
+        ArrayList<String> arrList = new ArrayList<>();
         Stack<String> stack = new Stack<>();
         Set<String> set = new HashSet<>();
 
         set.addAll(super.readInput());
         stack.addAll(super.readInput());
-        input.addAll(super.readInput());
+        arrList.addAll(super.readInput());
         // looping over each...
         for(String s : set) {
             System.out.println(s);
@@ -34,9 +36,16 @@ public class SampleDay extends Day {
         for(String s : stack) {
             System.out.println(s);
         }
-        for(String s : input) {
+        for(String s : arrList) {
             System.out.println(s);
-        }        
+        }
+        
+        // testing util methods
+        String[][] words = new String[3][];
+        words[0] = new String[]{"a", "b", "c"};
+        words[1] = new String[]{"d", "e", "f"};
+        words[2] = new String[]{"g", "h", "i"};
+        ArrayUtils.print2DArray(words);
     }
 
 }
