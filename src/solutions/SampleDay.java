@@ -3,10 +3,11 @@ package solutions;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Set;
 import java.util.Stack;
 
-import Utils.ArrayUtils;
+import Utils.Utils;
 
 public class SampleDay extends Day {
 
@@ -39,13 +40,6 @@ public class SampleDay extends Day {
         for(String s : arrList) {
             System.out.println(s);
         }
-        
-        // testing util methods
-        String[][] words = new String[3][];
-        words[0] = new String[]{"a", "b", "c"};
-        words[1] = new String[]{"d", "e", "f"};
-        words[2] = new String[]{"g", "h", "i"};
-        ArrayUtils.print2DArray(words);
     }
 
 }
