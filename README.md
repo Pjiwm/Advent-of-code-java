@@ -1,6 +1,5 @@
 # Advent of code Java
-This is the skeleton for a project for advent of code.
-It contains a couple utility methods as well to help you along the way...
+Simple skeleton for an advent of code project in java. It contains a couple utility methods and a file reader you can use.
 
 ## Creating a new solution
 Copy the input from advent of code
