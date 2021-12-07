@@ -3,11 +3,8 @@ package solutions;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.Set;
 import java.util.Stack;
-
-import Utils.Utils;
 
 public class SampleDay extends Day {
 
@@ -24,11 +21,12 @@ public class SampleDay extends Day {
     public void solution() throws IOException {
         // We retrieve the input from the file and put it in a datatype of our choice
         ArrayList<String> arrList = new ArrayList<>();
-        Stack<String> stack = new Stack<>();
         Set<String> set = new HashSet<>();
+        Stack<String> stack = new Stack<>();
+        stack.addAll(super.readInput());
+        
 
         set.addAll(super.readInput());
-        stack.addAll(super.readInput());
         arrList.addAll(super.readInput());
         // looping over each...
         for(String s : set) {
